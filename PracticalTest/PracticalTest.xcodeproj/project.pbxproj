@@ -16,6 +16,10 @@
 		29CDB16227049F85006DF6BF /* joblist.json in Resources */ = {isa = PBXBuildFile; fileRef = 29CDB16127049F85006DF6BF /* joblist.json */; };
 		29CDB16427049FA7006DF6BF /* PTApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CDB16327049FA7006DF6BF /* PTApplication.swift */; };
 		29CDB1662704A0BF006DF6BF /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CDB1652704A0BF006DF6BF /* UIStoryboard+Extensions.swift */; };
+		29CDB16B2704B3DE006DF6BF /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CDB16A2704B3DD006DF6BF /* Enum.swift */; };
+		29CDB16D2704B4E6006DF6BF /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CDB16C2704B4E6006DF6BF /* Utility.swift */; };
+		29CDB1712704B7AC006DF6BF /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CDB1702704B7AC006DF6BF /* DateCollectionViewCell.swift */; };
+		29CDB1732704B7C1006DF6BF /* JobDataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CDB1722704B7C1006DF6BF /* JobDataCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		29CDB16127049F85006DF6BF /* joblist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = joblist.json; sourceTree = "<group>"; };
 		29CDB16327049FA7006DF6BF /* PTApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTApplication.swift; sourceTree = "<group>"; };
 		29CDB1652704A0BF006DF6BF /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		29CDB16A2704B3DD006DF6BF /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		29CDB16C2704B4E6006DF6BF /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		29CDB1702704B7AC006DF6BF /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		29CDB1722704B7C1006DF6BF /* JobDataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDataCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +71,12 @@
 			isa = PBXGroup;
 			children = (
 				29CDB14927049F07006DF6BF /* AppDelegate.swift */,
+				29CDB16F2704B793006DF6BF /* Cell */,
+				29CDB16E2704B782006DF6BF /* Storyboard */,
 				29CDB1692704A0E7006DF6BF /* View */,
 				29CDB1682704A0DA006DF6BF /* Utility */,
 				29CDB1672704A0CE006DF6BF /* Extensions */,
 				29CDB16027049F70006DF6BF /* Data */,
-				29CDB14F27049F07006DF6BF /* Main.storyboard */,
 				29CDB15527049F0C006DF6BF /* Assets.xcassets */,
 				29CDB15727049F0C006DF6BF /* LaunchScreen.storyboard */,
 				29CDB15A27049F0C006DF6BF /* Info.plist */,
@@ -96,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				29CDB16327049FA7006DF6BF /* PTApplication.swift */,
+				29CDB16A2704B3DD006DF6BF /* Enum.swift */,
+				29CDB16C2704B4E6006DF6BF /* Utility.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -106,6 +117,23 @@
 				29CDB14D27049F07006DF6BF /* ViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		29CDB16E2704B782006DF6BF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				29CDB14F27049F07006DF6BF /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		29CDB16F2704B793006DF6BF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				29CDB1702704B7AC006DF6BF /* DateCollectionViewCell.swift */,
+				29CDB1722704B7C1006DF6BF /* JobDataCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,11 +208,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29CDB16D2704B4E6006DF6BF /* Utility.swift in Sources */,
 				29CDB1662704A0BF006DF6BF /* UIStoryboard+Extensions.swift in Sources */,
 				29CDB14E27049F07006DF6BF /* ViewController.swift in Sources */,
+				29CDB16B2704B3DE006DF6BF /* Enum.swift in Sources */,
+				29CDB1712704B7AC006DF6BF /* DateCollectionViewCell.swift in Sources */,
 				29CDB15427049F07006DF6BF /* PracticalTest.xcdatamodeld in Sources */,
 				29CDB14A27049F07006DF6BF /* AppDelegate.swift in Sources */,
 				29CDB16427049FA7006DF6BF /* PTApplication.swift in Sources */,
+				29CDB1732704B7C1006DF6BF /* JobDataCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
